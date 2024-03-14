@@ -127,8 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="IDeck.h" />
-    <ClInclude Include="ICard.h" />
+    <ClInclude Include="action.h" />
+    <ClInclude Include="battle.h" />
+    <ClInclude Include="bot.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="deck.h" />
+    <ClInclude Include="card.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="user.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
