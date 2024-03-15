@@ -1,8 +1,10 @@
 #include "game.h"
+#include "card.h"
+
 int main() {
 	int amount_players = 4;
 	Game game = Game(amount_players);
-	for (int i = 0; i < amount_players; i++) {
-		game.GameStart();
-	}
+	Card* card = new Card();
+	game.GameStart();
+	
 }

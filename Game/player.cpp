@@ -5,7 +5,7 @@
 using namespace ::std;
 
 Card* Player::GetMinTrumpCard(string suit_trump) {
-	Card* current_min_trump_card;
+	Card* current_min_trump_card = nullptr;
 	for (Card* card : this->set_cards) {
 		if (card->suit == suit_trump) {
 			string value = card->value;
@@ -19,4 +19,7 @@ Card* Player::GetMinTrumpCard(string suit_trump) {
 		}
 	}
 	return current_min_trump_card;
+}
+void Player::TakeCard(Card* inserting_card){
+	this->set_cards.push_back(inserting_card);
 }

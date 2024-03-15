@@ -29,7 +29,7 @@ void GameDeck::FillSetCards(vector<Card*>& set_cards) {
     };
     for (int j = 0; j < 3; j++) {
         for (string i : valuesCards) {
-            Card* card = new Card(Suit[j], i);
+            Card* card = new Card(Card::suit_array[j], i);
             set_cards.push_back(card);
         }
     }

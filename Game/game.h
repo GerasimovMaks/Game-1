@@ -3,25 +3,27 @@
 #include "battle.h"
 #include "deck.h"
 #include "player.h"
+#include "card.h"
 #include <map>
 using namespace ::std;
 
-
+class Player;
+class Card;
 
 class Game {
 private:
 	int amount_players;
-	vector<Player> players;
-	Battle current_battles[6]; // массив происходящих "сражений"
+	vector<Player*> players;
+	Battle* current_battles[6]; // массив происходящих "сражений"
 	vector<Card*> cards_on_desk;
 	GameDeck* deck; // колода
 	Player* current_fighting_player;
-	
+	int indexOfVectorElem(Player*);
 	void AddPlayersToArrayPlayers();
 	void ClearGameDeskOfCards();
-	void NextGameMove();
-	void DistributionCards(Player&);
+	void DistributionCards(Player*);
 	void SetFirstAttackingPlayer();
+	void MoveByPlayers(int, int&);
 public:
 	static const map<string, int> value_level;
 	Game(int amount_players);

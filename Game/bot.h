@@ -3,4 +3,6 @@
 using namespace ::std;
 
 class Bot : public  Player {
+public :
+	Bot();
 };
