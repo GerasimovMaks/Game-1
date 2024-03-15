@@ -2,7 +2,5 @@
 #include "player.h"
 using namespace ::std;
 
-class Bot : Player {
-public:
-	Bot();
+class Bot : public  Player {
 };

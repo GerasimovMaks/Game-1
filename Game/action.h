@@ -3,9 +3,9 @@
 class IAction {
 	
 };
-class IFightBackCardAction: IAction {
+class IFightBackCardAction: public IAction {
 
 };
-class IPickUpCardAction: IAction{
+class IPickUpCardAction: public IAction{
 
 };

@@ -1,15 +1,18 @@
 #include <string>
+#include "deck.h"
 using namespace ::std;
 #pragma once
-enum Suit
-{
-	Hearts,
-	Spades,
-	Diamonds,
-	Clubs
+string Suit[4] = {
+	"Hearts",
+	"Spades",
+	"Diamonds",
+	"Clubs"
 };
 
 class Card {
-	Suit Suit;
-	string Value;
+public:
+	string suit;
+	string value;
+	Card(string suit, string value);
+	Card();
 };

@@ -7,9 +7,10 @@ using namespace ::std;
 
 class Player {
 private:
-	vector<const Card&> set_cards;
+	vector<Card*> set_cards;
 public:
-	void TakeCard(const Card&);
+	void TakeCard(Card*);
+	Card* GetMinTrumpCard(string suit_trump);
 	IAction RespondToBattle();
 	IAction AttackOpponent();
 };

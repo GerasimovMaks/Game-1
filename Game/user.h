@@ -5,7 +5,7 @@
 #include "player.h"
 using namespace ::std;
 
-class User: Player{
+class User: public Player{
 public:
 	User();
 
