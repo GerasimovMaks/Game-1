@@ -1,17 +1,18 @@
 #pragma once
+#include <vector>
 #include "card.h"
 #include "player.h"
 using namespace ::std;
 
 class Battle {
 private:
-	
+	vector<Action*> actions;
 public:
 	Player* attacker;
 	Player* defender;
-	Card* attacker_card;
-	Card* defending_card;
-	Battle(Player*, Player*, Card*);
-	Battle();
-	void SetDefendingCard(Card*);
+	Battle(Player*, Player*);
+	bool IsCardsRepulsed();
+	void AttackCard(int , Card*); // index_card, card 
+	void DefenseCard(int index_card, Card* card);
+	void TossCard();
 };
