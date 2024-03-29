@@ -3,9 +3,21 @@
 #include "card.h"
 using namespace ::std;
 
-Battle::Battle(Player* attacker, Player* defender, Card* attacker_card) {
+bool Battle::IsCardsRepulsed() {
+	for (Action* action : this->actions) {
+		if (!(action->IsRepulsed())) {
+			return false;
+		}
+	}
+	return true;
+}
+Battle::Battle(Player* attacker, Player* defender) {
 	this->attacker = attacker;
 	this->defender = defender;
-	this->attacker_card = attacker_card;
 }
-Battle::Battle(){}
+void Battle::AttackCard(int index_card, Card* card) {
+
+}
+void Battle::DefenseCard(int index_card, Card* card) {
+
+}

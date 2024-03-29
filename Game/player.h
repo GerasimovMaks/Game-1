@@ -11,6 +11,4 @@ private:
 public:
 	void TakeCard(Card*);
 	Card* GetMinTrumpCard(string suit_trump);
-	IAction RespondToBattle();
-	IAction AttackOpponent();
 };

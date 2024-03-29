@@ -137,6 +137,7 @@
     <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="action.cpp" />
     <ClCompile Include="battle.cpp" />
     <ClCompile Include="bot.cpp" />
     <ClCompile Include="card.cpp" />

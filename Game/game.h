@@ -14,7 +14,7 @@ class Game {
 private:
 	int amount_players;
 	vector<Player*> players;
-	Battle* current_battles[6]; // массив происходящих "сражений"
+	Battle* battle; 
 	vector<Card*> cards_on_desk;
 	GameDeck* deck; // колода
 	Player* current_fighting_player;

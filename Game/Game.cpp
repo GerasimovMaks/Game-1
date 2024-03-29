@@ -88,5 +88,6 @@ void Game::GameStart(){
 			MoveByPlayers(index, step);
 		}
 	}
-	
 }
+
+// 
